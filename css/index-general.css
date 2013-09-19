@@ -7,12 +7,12 @@
 
 
 body{
-	background-image:url(wood_1/wood_1.png);
+	background-image:url(../images/wood_1.png);
 	background-repeat:repeat;
 }
 
 .box {
-	visibility:hidden;
+	display: none;
 	padding-top: 15em;
 	width: 75%;
 	max-width: 20em;
@@ -21,70 +21,72 @@ body{
 }
 
 .box2 {
-	visibility:visible;
+	display:block;
 	padding-top: 0;
 	max-width: 2em;
 	margin-left:0m;
 	margin-right:0em;
-	margin-top: -10em;
+	margin-top: 3em;
 }
 
 .logostack {
-	visibility: hidden;		
+	display: block;
 }
 
 .logo {		
-	visibility: visible;		
 	float:none;	
 	display: block;
 	width: 75%;
 		/*box-shadow:0px 0px 10px 0px rgba(0, 0, 0, .5);*/
 }
 
-
-@media only screen and (min-width: 52.5em) {
-
-.logostack {
-	visibility:hidden;
-}
-.logo {
-	visibility:visible;
-}
-.box {
-	visibility:visible;
-}
-.box2 {
-	visibility:hidden;
-}
-
-@media only screen and (min-width: 38.4em) {
-
-	.logostack {
-		visibility:hidden;
-	}
-	.logo {
-		visibility:visible;
-}
-	.logostack {
-		visibility:hidden;
-	
-}
-
-@media only screen and (min-width: 25em) { 
+@media only screen and (min-width: 25em) { /*medium*/
 
 
 .logostack {		
-	visibility:visible;
+	display: none;
 	width: 100%;
 	margin-top: -10em;
 		/*box-shadow:0px 0px 10px 0px rgba(0, 0, 0, .5);*/
 }	
 
 .logo {
-		visibility: hidden;
+	display: block;
 }
 
 }
+
+@media only screen and (min-width: 38.4em) { /*medium*/
+
+	.logostack {
+		display: none;
+	}
+	.logo {
+		display:block;
+}
+	.logostack {
+		display: none;
+	
+}
+}
+
+
+@media only screen and (min-width: 52.5em) { /*large*/
+
+.logostack {
+	display: none;
+}
+.logo {
+	display:block;
+}
+.box {
+	display:block;
+}
+.box2 {
+	display: none;
+}
+}
+
 
 
 
