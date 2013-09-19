@@ -1,7 +1,7 @@
 @-moz-viewport { width: device-width; scale: 1;	}
 @-ms-viewport { width: device-width; scale: 1;	}
 @-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width, scale: 1; }
 @viewport { width: device-width; scale: 1;	}
 
 
@@ -12,6 +12,7 @@ body{
 }
 
 .box {
+	visibility:hidden;
 	padding-top: 15em;
 	width: 75%;
 	max-width: 20em;
@@ -19,35 +20,79 @@ body{
 	margin-right:auto;
 }
 
+.box2 {
+	visibility:visible;
+	padding-top: 0;
+	max-width: 2em;
+	margin-left:0m;
+	margin-right:0em;
+	margin-top: -10em;
+}
+
+.logostack {
+	visibility: hidden;		
+}
 
 .logo {		
-		float:none;	
-		display: block;
-		width: 75%;
+	visibility: visible;		
+	float:none;	
+	display: block;
+	width: 75%;
 		/*box-shadow:0px 0px 10px 0px rgba(0, 0, 0, .5);*/
 }
 
 
-@media only screen and (max-width: 25em) { 
+@media only screen and (min-width: 52.5em) {
+
+.logostack {
+	visibility:hidden;
+}
+.logo {
+	visibility:visible;
+}
 .box {
-	padding-top: 15em;
-	width: 10%;
-	max-width: 1em;
-	margin-left:1em;
-	margin-right:1em;
+	visibility:visible;
+}
+.box2 {
+	visibility:hidden;
 }
 
+@media only screen and (min-width: 38.4em) {
 
-.logo {		
-		float:left;	
-		display:inherit;
-		width: 10em;
+	.logostack {
+		visibility:hidden;
+	}
+	.logo {
+		visibility:visible;
+}
+	.logostack {
+		visibility:hidden;
+	
+}
+
+@media only screen and (min-width: 25em) { 
+
+
+.logostack {		
+	visibility:visible;
+	width: 100%;
+	margin-top: -10em;
 		/*box-shadow:0px 0px 10px 0px rgba(0, 0, 0, .5);*/
 }	
 
+.logo {
+		visibility: hidden;
 }
 
+}
+
+
+
+
+
+/*
 hr { 
 margin:0;
 margin-left: -1em;
-}
+}*/
+

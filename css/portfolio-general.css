@@ -1,7 +1,7 @@
 @-moz-viewport { width: device-width; scale: 1;	}
 @-ms-viewport { width: device-width; scale: 1;	}
 @-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width, scale: 1; }
 @viewport { width: device-width; scale: 1;	}
 
 
@@ -17,7 +17,17 @@ h1 {font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight:normal;
 	padding-left: .45em;
 	width: 100%;
+	
+	text-align: justify;
+    letter-spacing: 1px;
+    /*height: 8em;
+    padding: 2em 10%;
+    background: #2c3e50;*/
+    color: #fff;
 }
+
+
+
 nav bar {	
 	-moz-border-radius: 8px 0px 0px 8px;  
 	-webkit-border-top-left-radius: 8px;     	
