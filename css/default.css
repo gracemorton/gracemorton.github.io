@@ -1,3 +1,152 @@
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #b3b9bf;
+	background: #f9f9f9;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #333;
+}
+
+.wrapper a:hover,
+.wrapper a:focus,
+.wrapper a:active {
+	background-color:#fff;
+	opacity: .50;
+	padding: 5em;
+}
+
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+
+.codrops-icon-next:before {
+	content: "\e000";
+}
+
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 0.9em;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	border: 3px solid #b3b9bf;
+	color: #099;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	border-color:rgba(0,153,153,1);
+	color:rgba(0,153,153,1);
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* General Demo Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
@@ -29,27 +178,12 @@ body {
 }
 
 
-.nav {
-	/*-moz-border-radius: 8px 0px 0px 8px;  
-	-webkit-border-top-left-radius: 0px;     	
-	-webkit-border-bottom-right-radius: 8px; 
-	border-top-right-radius: 8px;  
-	border-bottom-right-radius: 8px;        
-	
-		background: 
-		-webkit-gradient(
-			linear, 
-			left top, 
-			left bottom, 
-			from(#0CC), 
-			to(#099)
-		); */
-	
+.container{
 	width: 100%;
 
 }
 
-.nav li {
+.container li {
 	display:inline;
 padding: .35em;
 }
@@ -59,7 +193,16 @@ ul {
 }
 
 
-
+.grid effect-6 a,
+.grid effect-6 a:link,
+.grid effect-6 a:visited 
+.grid effect-6 a:hover,
+.grid effect-6 a:focus,
+.grid effect-6 a:active {
+	background-color: #fff;
+	border-radius: 6px;
+	opacity: 0.25;
+}
 
 
 
@@ -171,6 +314,11 @@ a:active {
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
 	opacity: 0.6;
+}
+
+.wrapper {
+	margin-top: -3em;
+	padding: 0;
 }
 
 @media screen and (max-width: 25em) {

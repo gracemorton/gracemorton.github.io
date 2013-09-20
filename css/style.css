@@ -19,7 +19,8 @@ body{
 	top:130px;
 	overflow:hidden;
 	right:1px;
-	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+
 }
 .slidingMenu li {
 	display:block;
@@ -27,6 +28,7 @@ body{
 	clear:both;
 	position:relative;
 	overflow:hidden;
+
 }
 .slidingMenu li.move { /*teal hover over 'home' etc*/
 	width: 9px;
@@ -81,6 +83,8 @@ body{
 .slidingMenuDesc{
 	margin-top:195px;
 	position:relative;
+
+	
 }
 .slidingMenuDesc div{
 	background: #2183c4;     
