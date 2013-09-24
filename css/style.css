@@ -30,6 +30,7 @@ body{
 	overflow:hidden;
 
 }
+
 .slidingMenu li.move { /*teal hover over 'home' etc*/
 	width: 9px;
 	height: 68px;
@@ -64,11 +65,11 @@ body{
 	}
 	
 .slidingMenu li a {
-	font-size:66px;
+	/*font-size:66px;
 	text-transform:uppercase;
 	text-decoration: none;
 	color: #ddd;
-	outline: none;
+	outline: none;*/
 	text-indent:5px;
 	z-index: 10;
 	display: block;
